@@ -2,7 +2,7 @@
 if (empty($_COOKIE['username']))
 {
     echo "<script>alert('请先登陆!')</script>";
-    echo "<meta http-equiv='refresh' content='0;login.php'/>";
+    echo "<script>window.location.href='login.php';</script>";
 }
 ?>
 <html>
