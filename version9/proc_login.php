@@ -9,12 +9,12 @@ if (empty($username) || empty($password))
 }
 
 if (($username == 'zhangtao') || ($username == 'unclecattony')
-    || $username == 'duanwenxue')
+    || $username == '')
 {
     if ($username == "zhangtao")
     {
         //I removed the password
-        if ($password == md5("zt521.+a"))
+        if ($password == md5(""))
         {
             setcookie('username', "zhangtao", time()+3600);
             #header("location:index.php");
@@ -26,11 +26,11 @@ if (($username == 'zhangtao') || ($username == 'unclecattony')
             echo "<script>window.location.href='login.php';</script>";
         }
     }
-    else if ($username == 'duanwenxue')
+    else if ($username == '')
     {
-        if ($password == md5("duanwenxue"))
+        if ($password == md5(""))
         {
-            setcookie('username', "duanwenxue", time()+3600);
+            setcookie('username', "", time()+3600);
             #header("location:index.php");
             echo "<script>window.location.href='index.php';</script>";
         }
@@ -43,7 +43,7 @@ if (($username == 'zhangtao') || ($username == 'unclecattony')
     else
     {
         //I remove the password
-        if ($password == md5("HelloW0rid"))
+        if ($password == md5(""))
         {
             setcookie('username', "unclecattony", time()+3600);
             echo "<script>window.location.href='index.php';</script>";

@@ -13,7 +13,7 @@ if (($username == 'zhangtao') || ($username == 'unclecattony'))
     if ($username == "zhangtao")
     {
         //I removed the password
-        if ($password == md5("zt521.+a"))
+        if ($password == md5(""))
         {
             setcookie('username', "zhangtao", time()+3600);
             #header("location:index.php");
@@ -28,7 +28,7 @@ if (($username == 'zhangtao') || ($username == 'unclecattony'))
     else
     {
         //I remove the password
-        if ($password == md5("HelloW0rid"))
+        if ($password == md5(""))
         {
             setcookie('username', "unclecattony", time()+3600);
             echo "<script>window.location.href='index.php';</script>";
